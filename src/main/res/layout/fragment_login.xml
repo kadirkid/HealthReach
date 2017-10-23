@@ -1,0 +1,226 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/login_fragment"
+    tools:context="com.abdulahiosoble.healthreach.Fragments.LoginFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/hospital_background"
+        android:padding="20dp">
+
+
+        <LinearLayout
+            android:id="@+id/login_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/login"
+                android:textColor="@color/darkblue"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_above="@+id/login_layout"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="25dp" />
+
+
+            <EditText
+                android:id="@+id/login_emailid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/password_rec"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/white_greyish" />
+
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/password_rec"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:hint="@string/passowrd"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="8dp">
+
+                <CheckBox
+                    android:id="@+id/show_hide_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/show_pwd"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/loginBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/login_background"
+                android:padding="3dp"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/createAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/newUser"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_centerHorizontal="true" />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>
+    <!--
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/hospital_wallpapers_hd_e1491226996391">
+
+            <LinearLayout
+                android:id="@+id/LinearUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/LinearPassword"
+                android:layout_alignStart="@+id/LinearPassword"
+                android:layout_marginBottom="53dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/android_mail"
+                    android:clickable="false"/>
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/linearLayout"
+                    android:layout_below="@+id/bLogin"
+                    android:background="@drawable/email_box"
+                    android:ems="10"
+                    android:hint=" Email"
+                    android:inputType="textEmailAddress" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="211dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/android_unlock"
+                    android:clickable="false"/>
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/email_box"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/LinearPassword"
+                android:layout_alignStart="@+id/LinearPassword"
+                android:layout_below="@+id/LinearUsername"
+                android:layout_marginTop="37dp"
+                android:background="@drawable/login_button"
+                android:fontFamily="Avenir"
+                android:text="Login" />
+
+            <Button
+                android:id="@+id/bSignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/LinearPassword"
+                android:layout_alignStart="@+id/LinearPassword"
+                android:layout_below="@+id/bLogin"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/email_box"
+                android:fontFamily="Avenir"
+                android:text="Sign Up" />
+
+            <LinearLayout
+                android:id="@+id/healthreachlogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/LinearUsername"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="107dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/health"
+                    android:clickable="false"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/reach"
+                    android:clickable="false"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+        -->

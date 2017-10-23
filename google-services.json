@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "9273568514",
+    "firebase_url": "https://health-reach.firebaseio.com",
+    "project_id": "health-reach",
+    "storage_bucket": "health-reach.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:9273568514:android:68450ea2527013cf",
+        "android_client_info": {
+          "package_name": "com.abdulahiosoble.healthreach"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "9273568514-c2lj0hnipd0anp9jvol7vfr8du07fhva.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCf38NyLSt4YjN4jlgYWUqoGyl3uhnWZs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

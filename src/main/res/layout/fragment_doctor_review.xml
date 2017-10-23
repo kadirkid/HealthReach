@@ -1,0 +1,72 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:rb="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.abdulahiosoble.healthreach.Fragments.DoctorReviewFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="15dp"
+                android:text="@string/OverallRating" />
+
+            <com.hedgehog.ratingbar.RatingBar
+                xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/overallRating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                hedgehog:clickable="false"
+                hedgehog:halfstart="true"
+                hedgehog:starCount="5"
+                hedgehog:starEmpty="@mipmap/star_empty"
+                hedgehog:starFill="@mipmap/star_full"
+                hedgehog:starHalf="@mipmap/star_half"
+                hedgehog:starImageHeight="40dp"
+                hedgehog:starImageWidth="50dp"
+                hedgehog:starImagePadding="10dp"
+               />
+
+        </LinearLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/reviewRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addReview"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@mipmap/add_icon"
+        android:background="@color/colorPrimary"
+        android:foregroundGravity="center"/>
+
+</FrameLayout>

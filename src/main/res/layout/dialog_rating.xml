@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rb="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/addReviewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Add Review"
+        android:textSize="25dp"
+        android:textColor="@color/authui_colorPrimary"/>
+
+    <com.hedgehog.ratingbar.RatingBar
+        xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/newRating"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="3dp"
+        hedgehog:clickable="true"
+        hedgehog:halfstart="true"
+        hedgehog:starCount="5"
+        hedgehog:starEmpty="@mipmap/star_empty"
+        hedgehog:starFill="@mipmap/star_full"
+        hedgehog:starHalf="@mipmap/star_half"
+        hedgehog:starImageHeight="40dp"
+        hedgehog:starImageWidth="50dp"
+        hedgehog:starImagePadding="10dp" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Problem"/>
+
+        <EditText
+            android:id="@+id/dialogProblem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/cardcolor"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comment"/>
+
+        <EditText
+            android:id="@+id/dialogComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="10"
+            android:layout_marginLeft="10dp"
+            android:background="@color/cardcolor"/>
+
+    </LinearLayout>
+</LinearLayout>
+    <Button
+        android:id="@+id/buttonAddReview"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorPrimary"
+        android:text="Add"
+        android:textColor="#fff"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
